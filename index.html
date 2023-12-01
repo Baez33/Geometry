@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Geometric Figure</title>
+</head>
+<body>
+    <h1>Geometric Figure</h1>
+    <div>
+        <div>
+            <section>
+                <h2>Calculate the area and perimeter of a square</h2>
+                <form>
+                    <div>
+                        <label for="squareInput">
+                            How long is each side?
+                        </label>
+                        <input id="squareInput" type="number">
+                    </div>
+                    <p id="squarePerimeter"></p>
+                    <p id="squareArea"></p>
+                    <div>
+                        <button type="button" onclick="squarePerimeterCalculate()">Calculate perimeter</button>
+                        <button type="button" onclick="squareAreaCalculate()">Calculate area</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div>
+            <section>
+                <h2>Calculate the area and perimeter of a circle</h2>
+                <form>
+                    <div>
+                        <label for="circleInput">
+                            How long is the radius?
+                        </label>
+                        <input id="circleInput" type="number">
+                    </div>
+                    <p id="circlePerimeter"></p>
+                    <p id="circleArea"></p>
+                    <div>
+                        <button type="button" onclick="circlePerimeterCalculate()">Calculate perimeter</button>
+                        <button type="button" onclick="circleAreaCalculate()">Calculate area</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div>
+            <section>
+                <h2>Calculate the area and perimeter of a triangle</h2>
+                <form>
+                    <div>
+                        <label for="triangleInput1">
+                            How long is the first side?
+                        </label>
+                        <input id="triangleInput1" type="number">
+
+                        <label for="triangleInput2">
+                            How long is the second side?
+                        </label>
+                        <input id="triangleInput2" type="number">
+
+                        <label for="triangleBase">
+                            How long is the base?
+                        </label>
+                        <input id="triangleBase" type="number">
+
+                        <label for="triangleHeight">
+                            How long is the height?
+                        </label>
+                        <input id="triangleHeight" type="number">
+                    </div>
+                    <p id="trianglePerimeter"></p>
+                    <p id="triangleArea"></p>
+                    <div>
+                        <button type="button" onclick="trianglePerimeterCalculate()">Calculate perimeter</button>
+                        <button type="button" onclick="triangleAreaCalculate()">Calculate area</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
